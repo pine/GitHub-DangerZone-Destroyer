@@ -8,5 +8,11 @@ This is a browser extension.
 
 - Google Chrome
 
+## Build
+
+```
+$ ./build.sh
+```
+
 ## License
 Public Domain
