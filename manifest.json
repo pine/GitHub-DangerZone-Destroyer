@@ -18,6 +18,7 @@
         "content_scripts.css"
       ],
       "js": [
+        "content_scripts.js"
       ],
       "run_at": "document_start",
       "all_frames": false
