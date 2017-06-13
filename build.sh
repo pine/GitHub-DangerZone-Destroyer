@@ -2,4 +2,4 @@
 
 set -eux
 
-zip GitHub-DangerZone-Destroyer.zip *.css *.png *.json
+zip GitHub-DangerZone-Destroyer.zip *.css *.js *.png *.json
