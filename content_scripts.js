@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener('DOMContentLoaded', function (e) {
+function refresh() {
   const snapshot = document.evaluate(
     '//*[@class="Subhead-heading"][contains(text(), "Danger Zone")]',
     document,
@@ -11,4 +11,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
   for (let i = 0; i < snapshot.snapshotLength; i++) {
     snapshot.snapshotItem(i).style.display = 'none'
   }
-}, false)
+}
+
+document.addEventListener('pjax:end', refresh, false)
+document.addEventListener('DOMContentLoaded', refresh, false)
